@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/recognize",
+            "lambdaFunction": "fastFoodRecognizeFunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/recognize"
+        }
+    ],
+    "resourceName": "fastFoodRecognize",
+    "apiName": "fastFoodRecognize",
+    "functionArns": [
+        {
+            "lambdaFunction": "fastFoodRecognizeFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-fastfoodrecognize-dev-153439-authRole",
+        "unAuthRoleName": "amplify-fastfoodrecognize-dev-153439-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "fastFoodRecognizeFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
