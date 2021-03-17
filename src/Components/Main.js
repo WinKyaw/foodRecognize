@@ -6,14 +6,14 @@ import Uploads from './Uploads';
 import Cookies from 'universal-cookie';
 
 
+
 export default class Main extends React.Component {
+
 
   render() {
     return (
       <div>
         <h1> Estimate My Daily Intake! </h1>
-        <FoodInfo/>
-        <CaloriesInfo/>
         <Uploads/>
       </div>
     )

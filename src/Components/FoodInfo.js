@@ -1,26 +1,12 @@
 import React, { Component } from 'react';
 import { Form, Image, Container } from 'react-bootstrap';
-export default class FoodInfo extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-
-    }
-  }
-  render() {
+export default function FoodInfo(foodName) {
     return (
       <div>
-        
-        <div>
-          <form>
-            <label>
-              Food:
-              <Form.Control type="text" placeholder="Readonly input here..." readOnly />
-            </label>
 
-          </form>
-        </div>
+      <p>Food Name: {foodName}</p>
+
       </div>
     )
-  }
+
 }
